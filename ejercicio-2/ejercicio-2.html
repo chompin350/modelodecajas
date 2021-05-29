@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" /> <title>Ejercicio 2</title>
+        <style media="screen" type="text/css"> 
+            html, body {
+                margin: 0; 
+                padding: 0; 
+                
+            }
+            
+            .contenedor{
+                position: relative;
+            }
+            .square { 
+                height: 200px; 
+                width: 200px;
+            }
+            .contenedor{
+                position: relative;
+            }
+
+            .square__blue {
+                background-color: rgba(0, 0, 255, .5); 
+                position: absolute;
+                left: 300px; 
+                top: 200px; 
+                z-index: 1;
+               
+            }
+
+            .square__green {
+                background-color: rgba(0, 255, 0, .5); 
+                position: absolute; 
+                left: 280px; 
+                top: 180px; 
+                z-index: 2;
+
+            }
+
+            .square__red {
+                position: absolute;
+                background-color: rgba(255, 0, 0, .5); 
+                left: 260px; 
+                top: 160px; 
+                z-index: 3;
+            }
+
+        </style> 
+    </head>
+<body>
+    <div class="contenedor">
+        <section class="square square__blue"></section>
+        <section class="square square__green"></section> 
+        <section class="square square__red"></section> 
+    </div>
+
+</body>
+
+</html>

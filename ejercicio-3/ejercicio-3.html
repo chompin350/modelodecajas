@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+        <style media="screen" type="text/css"> 
+             /* CONTENEDOR PRINCIPAL */
+             .contenedor_div{
+                display: flex;
+                justify-content: space-around;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                flex-flow: row wrap;
+             }
+             /* CONTENEDOR PARA LAS 4 BANDERES */
+             .div_item{
+                width: 45%;
+                height: 500px;
+                margin-top: 20px;
+                flex-direction: row;   
+                
+             }
+             /* DIVISON DE LA BANDERA DE ESPAÑA 3 SECCIONES + 1 PARA EL TITULO */
+             .div_item_sub{
+                 height: 150px;
+                 width: 100%;
+             }
+             /* TITULO DE LA BANDERA  */
+             .div_item_titulo{
+                background-color: #fff;
+                width: 45%;
+                height: 50px;
+             }
+             /* COLORES BAMDERA DE ESPAÑA */
+             .fondo_rojo{background-color: #fe0000;}
+             .fondo_amarillo{background-color: #ffff00;}
+
+             /* CONTENEDOR DE BANDER DE DINAMARCA */
+             .div_item_flex{
+                 display: flex;
+                 flex-flow: row wrap;
+                 height: 500px;
+             }
+            .div_item_dinamarca_01{
+                width: 33%;
+                margin-bottom: 10px;
+                height: 220px;
+                
+            }
+            .div_item_dinamarca_02{
+                width: 60%;
+                margin-bottom: 10px;
+                margin-left: 25px;
+                height: 220px;
+            }
+            .div_item_dinamarca_03{
+                width: 33%;
+                height: 220px;
+            }
+            .div_item_dinamarca_04{
+                width: 60%;
+                margin-left: 25px;
+                height: 220px;
+            }
+            /* FONDO DINAMARCA */
+            .fondo_dinamarca{
+                background-color: #fe0000 ;
+            }
+            /* BANDERA EMIRATOS ARABES */
+            .div_arabe_01{
+                width: 33%;
+                height: 450px;
+                margin-top: 20px;
+                flex-direction: row;   
+                background-color: #fe0000;              
+            }
+            .div_arabe_02{
+                display: flex;
+                 flex-flow: row wrap;
+                 height: 450px;    
+                 width: 67%;     
+                 margin-top: 20px;
+            }
+            .div_arabe_sub{
+                height: 150px;
+                width: 100%;
+                border-right: 1px solid grey;
+            }
+            .div_verde_arabe{background-color: #008001;}
+            .div_negro_arabe{background-color: #000000;}
+
+            /* BANDERA JAPON */
+            .div_japon{
+                border: 1 solid #000;
+                height: 450px;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                padding: 3px;
+            }
+            .div_bandera_japon{
+                width: 150px;
+                height: 150px;
+                background-color: #fe0000;
+                border-radius: 50%;
+                
+            }
+
+            .borde_gris{
+                border: 1px solid grey;
+            }
+        </style>
+</head>
+<body>
+
+    <div class="contenedor_div">
+        <!-- BANDERA ESPAÑA -->
+        <div class="div_item">
+            <div class="borde_gris">
+                <div class="div_item_sub fondo_rojo"></div>
+                <div class="div_item_sub fondo_amarillo"></div>
+                <div class="div_item_sub fondo_rojo"></div>
+            </div>
+            <div class="div_item_sub">España</div>
+            
+        </div>
+        <!-- BAMDERA DINAMARCA -->
+        <div class="div_item">
+            <div class="div_item_flex">
+                <div class="div_item_dinamarca_01 fondo_dinamarca"></div>
+                <div class="div_item_dinamarca_02 fondo_dinamarca"></div>
+                <div class="div_item_dinamarca_03 fondo_dinamarca"></div>
+                <div class="div_item_dinamarca_04 fondo_dinamarca"></div>
+            </div>
+            <div class="div_item_titulo">Dinamarca</div>
+        </div>
+        <div class="div_item">
+            <div class="contenedor_div">
+                <div class="div_arabe_01"></div>
+                <div class="div_arabe_02">
+                    <div class="div_arabe_sub div_verde_arabe"></div>
+                    <div class="div_arabe_sub"></div>
+                    <div class="div_arabe_sub div_negro_arabe"></div>
+                </div>
+            </div>
+            <div class="div_item_titulo">Emiratos Arabes</div>
+        </div>
+        
+        <div class="div_item">
+            <div class="div_japon borde_gris">
+                <div class="div_bandera_japon"></div>
+            </div>
+            <div class="div_item_titulo">Japon</div>
+        </div>
+    </div>
+</body>
+</html>
